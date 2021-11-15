@@ -1,0 +1,12 @@
+.navigation {
+    background-color: rgb(156, 218, 236);
+    height: 60px;
+  }
+  
+  .navigation a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 5px;
+    line-height: 3;
+  }
