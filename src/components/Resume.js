@@ -1,11 +1,14 @@
 import React from "react"
- 
-function Resume(props) {
+// import { Card } from "react-bootstrap";
+import "../styles/About.css";
+import laxmiresume from "../assets/Resume-2021.pdf";
+import { Document } from 'react-pdf/dist/esm/entry.webpack';
+function Resume() {
   return (
     <div>
-      <h1>Resume</h1>
+      <h>Resume</h>
     </div>
   )
 }
- 
+
 export default Resume;

@@ -3,7 +3,7 @@ import React from "react"
 function NewComponent(props) {
   return (
     <div>
-      <h1>New Component</h1>
+      <h1>Footer</h1>
     </div>
   )
 }
