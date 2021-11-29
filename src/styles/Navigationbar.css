@@ -1,14 +1,28 @@
+
+
 .navigation {
-    background-color: rgb(156, 218, 236);
-    height: 60px;
-  }
-  
-  .navigation a {
-    color: white;
-    font-size: 1.3rem;
-    text-decoration: none;
-    margin: 5px;
-    line-height: 3;
-  }
+  background-color: rgb(0, 174, 255); 
+  list-style-type: none;
+  flex: auto;
+  text-align: right;
+  margin: auto;
+  font-size: 30px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.menu {
+  align-self: flex-end;
+}
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
 
 

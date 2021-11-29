@@ -10,29 +10,24 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-// import App.css from "./App.css";
+import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <div>
+    <div className="content">
       <Navigationbar />
-      {/* <Header /> */}
-      <Router>
-        <Routes>
-          <Route index element={<About />} />
-          <Route path="about" element={<About />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="resume" element={<Resume />} />
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
-          {/* <Route path="*" element={<NoMatch />} /> */}
-
-        </Routes>
-      </Router>
+      <div>
+        <Router>
+          <Routes>
+            <Route index element={<About />} />
+            <Route path="about" element={<About />} />
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="resume" element={<Resume />} />
+          </Routes>
+        </Router>
+      </div>
       <Footer />
     </div>
   );

@@ -1,0 +1,10 @@
+
+
+ .foot {
+    background-color: rgb(0, 162, 255);
+    border-top: 10px solid black;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }

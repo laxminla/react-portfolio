@@ -1,0 +1,4 @@
+.content {
+    background-color: lightsteelblue;
+    height: calc(100vh - 60px);
+}
