@@ -14,7 +14,7 @@ function Portfolio(props) {
       <h1>Portfolio</h1>
       <CardGroup >
         <Card>
-          <Card.Img variant="top" img src={picture} width='200' />
+          <Card.Img variant="top" img src={picture} width='150' />
           <Card.Body>
             <Card.Title>Fitness Tracker</Card.Title>
             <Card.Text>
@@ -30,7 +30,7 @@ function Portfolio(props) {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" img src={ecommerce} width='200' />
+          <Card.Img variant="top" img src={ecommerce} width='150' />
           <Card.Body>
             <Card.Title>E-commerce Back End</Card.Title>
             <Card.Text>
@@ -45,7 +45,7 @@ function Portfolio(props) {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src={picture1} width='200' />
+          <Card.Img variant="top" src={picture1} width='150' />
           <Card.Body>
             <Card.Title>Password Generator</Card.Title>
             <Card.Text>
@@ -62,7 +62,7 @@ function Portfolio(props) {
       </CardGroup>
       <CardGroup>
         <Card>
-          <Card.Img variant="top" img src={dayplanner} width='200' />
+          <Card.Img variant="top" img src={dayplanner} width='150' />
           <Card.Body>
             <Card.Title>Budget Tracker</Card.Title>
             <Card.Text>
@@ -77,7 +77,7 @@ function Portfolio(props) {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" img src={notetaker} width='200' />
+          <Card.Img variant="top" img src={notetaker} width='150' />
           <Card.Body>
             <Card.Title>Note Taker</Card.Title>
             <Card.Text>
@@ -92,7 +92,7 @@ function Portfolio(props) {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" img src={employeems} width='200' />
+          <Card.Img variant="top" img src={employeems} width='150' />
           <Card.Body>
             <Card.Title>Employee Management System</Card.Title>
             <Card.Text>

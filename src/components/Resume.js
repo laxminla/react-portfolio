@@ -7,10 +7,34 @@ import "../styles/About.css";
 function Resume() {
   return (
     <Container>
-      <div className="content">
+      <h1 className="main">Resume</h1>
+      <div className="cont">
         <h>Download <a href="https://docs.google.com/document/d/1fFNkbJcogGRFGOO956hapHXQQ0CSFhMjZtNa62dwafY/edit?usp=sharing" target="_blank">my resume</a></h>
       </div>
-
+      <div>
+        <p>Front-End Profiencies
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <li>JQuery</li>
+            <li>responsive design</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+          </ul>
+        </p>
+        <p>Back-End Profiencies
+          <ul>
+            <li>APIs</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MySQL, Sequelize</li>
+            <li>MongoDB, Mongoose</li>
+            <li>REST</li>
+            <li>GraphQL</li>
+          </ul>
+        </p>
+      </div>
     </Container>
   )
 }

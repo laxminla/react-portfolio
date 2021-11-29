@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { validateEmail } from "../utils/helper.js";
+// import { validateEmail } from "../utils/helper.js";
 import { Form, Button, Container } from "react-bootstrap"
 
 function Contact() {

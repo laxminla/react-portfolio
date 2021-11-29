@@ -13,6 +13,7 @@
 
 .menu {
   align-self: flex-end;
+  font-weight: bold;
 }
 .name {
   font-size: 2rem;

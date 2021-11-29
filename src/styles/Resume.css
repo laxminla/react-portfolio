@@ -1,4 +1,9 @@
-.content {
+.main {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.cont {
     font-size: 25px;
     justify-content: center;
     margin-top: 20px;
