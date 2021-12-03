@@ -16,9 +16,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <div className="content">
-      <Navigationbar />
+
       <div>
         <Router>
+          <Navigationbar />
           <Routes>
             <Route index element={<About />} />
             <Route path="about" element={<About />} />

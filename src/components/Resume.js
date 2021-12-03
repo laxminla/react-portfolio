@@ -9,7 +9,7 @@ function Resume() {
     <Container>
       <h1 className="main">Resume</h1>
       <div className="cont">
-        <h>Download <a href="https://docs.google.com/document/d/1fFNkbJcogGRFGOO956hapHXQQ0CSFhMjZtNa62dwafY/edit?usp=sharing" target="_blank">my resume</a></h>
+        <h>Download <a href="https://docs.google.com/document/d/1fFNkbJcogGRFGOO956hapHXQQ0CSFhMjZtNa62dwafY/edit?usp=sharing" target="_blank" rel="noreferrer">my resume</a></h>
       </div>
       <div>
         <p>Front-End Profiencies
