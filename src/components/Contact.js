@@ -7,37 +7,63 @@ function Contact() {
     name: '',
     email: '',
     message: '',
-  })
+  });
   const [errMessage, setErrMessage] = useState('');
+  const [nameErrMessage, setNameErrMessage] = useState('');
+  const [emailErrMessage, setEmailErrMessage] = useState('');
+  const [messageErrMessage, setMessageErrMessage] = useState('');
   const { name, email, message } = state;
 
+  const validateEmail = (email) => {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      return (true);
+    }
+    return (false);
+  };
+
   const handleSubmit = (e) => {
-    console.log(name, email, message)
+    // console.log(name, email, message)
     e.preventDefault();
-    if (!errMessage) {
+    let error;
+
+    if (!name) {
+      setNameErrMessage('Invalid name');
+    }
+
+    if (!email || !validateEmail(email)) {
+      setEmailErrMessage('Invalid email');
+    }
+
+    if (!message) {
+      setMessageErrMessage('Invalid message');
+    }
+
+    if (!nameErrMessage && !emailErrMessage && !messageErrMessage) {
       console.log('Submit Form, state');
+      setState({ 
+        name: '',
+        email: '',
+        message: ''
+      });
     }
   };
+
   const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = true;
-      console.log('email ', e.target.value)
-      console.log(isValid)
-      if (!isValid) {
-        setErrMessage('Invalid Email');
-      } else {
-        setErrMessage('');
-      }
+    if (e.target.value.length === 0) {
+      setErrMessage(`${e.target.name} is required`);
     } else {
-      if (e.target.value.length === 0) {
-        setErrMessage(`${e.target.name} is required`);
+      setErrMessage('');
+      if (e.target.name === 'name') {
+        setNameErrMessage('');
+      } else if (e.target.name === 'email') {
+        setEmailErrMessage('');
       } else {
-        setErrMessage('');
+        setMessageErrMessage('');
       }
     }
+
     if (!errMessage) {
       setState({ ...state, [e.target.name]: e.target.value });
-      console.log('Handle Form', state)
     }
   }
   return (
@@ -63,6 +89,22 @@ function Contact() {
           <p className="error-text">{errMessage}</p>
         </div>
       )}
+      {nameErrMessage && (
+        <div>
+          <p className="error-text">{nameErrMessage}</p>
+        </div>
+      )}
+      {emailErrMessage && (
+        <div>
+          <p className="error-text">{emailErrMessage}</p>
+        </div>
+      )}
+      {messageErrMessage && (
+        <div>
+          <p className="error-text">{messageErrMessage}</p>
+        </div>
+      )}
+
     </Container>
   );
 

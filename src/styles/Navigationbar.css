@@ -9,17 +9,18 @@
   font-size: 30px;
   padding: 20px;
   display: inline-block;
+  width: 100vw;
 }
 
 .menu {
   align-self: flex-end;
   font-weight: bold;
 }
+
 .name {
   font-size: 2rem;
   font-weight: bold;
 }
-
 
 
 
